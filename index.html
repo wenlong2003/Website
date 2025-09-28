@@ -6,12 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <script src="lightmode.js" defer></script>
     <title>Portfolio</title>
 </head>
 
 <body>
+    
+    <button id="theme-switch">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+    </button>
 
-    <div id="navbar"></div>
+    <nav>
+        <ul class="nav-links">
+            <li id="link1" class="link"><a href="#">Home</a></li>
+            <li id="link2" class="link"><a href="#">Projects</a></li>
+            <li id="link3" class="link"><a href="#">About Me</a></li>
+        </ul>
+    </nav>
 
     <header id="top" class="container header">
         <div class="content">
@@ -42,17 +54,17 @@
                 <p>
                     Progress: Finished
                 </p>
-                <a href="Game2D.html" target="_blank">Read More <i class="ri-arrow-right-line"></i></a>
+                <a href="Game2D.html">Read More <i class="ri-arrow-right-line"></i></a>
             </div>
             <div class="card">
                 <span><img
                         src="https://media.istockphoto.com/id/542175174/photo/under-construction-concept.jpg?s=612x612&w=0&k=20&c=-GTi1Al7zUEUDHk3TD6yH5J3eFH4E-Md8lFLbG6GqNQ="
                         alt="Image"></span>
-                <h4>Upcoming</h4>
+                <h4>Discord Bot</h4>
                 <p>
-                    Progress: In process...
+                    Progress: Pending...
                 </p>
-                <a href="process.html" target="_blank">Read More <i class="ri-arrow-right-line"></i></a>
+                <a href="process.html">Read More <i class="ri-arrow-right-line"></i></a>
             </div>
         </div>
     </section>
@@ -61,8 +73,9 @@
         <div class="column">
             <h4>Find Me</h4>
             <div class="socials">
-                <a href="https://www.linkedin.com/in/wenlong-cen-cen-b83033299/" target="_blank"><i class="ri-linkedin-fill"></i></a>
-                <a href="https://github.com/wenlong2003" target="_blank"><i class="ri-github-line"></i></a>
+                <a href="https://www.linkedin.com/in/wenlong-cen-cen-b83033299/" target="_blank"><i
+                        class="ri-linkedin-fill"></i></a>
+                <a href="https://github.com/wenlong2003"><i class="ri-github-line"></i></a>
             </div>
         </div>
     </footer>
