@@ -33,7 +33,6 @@ link3.addEventListener('click', () => {
 });
 
 const div = document.querySelector('.text');
-const div2 = document.querySelector('.text2');
 
 function typeWriter(element, text, speed = { type: 110, delete: 70, pause: 1000 }, i = 0, deleting = false) {
     element.textContent = text.substring(0, i);
