@@ -31,3 +31,22 @@ link2.addEventListener('click', () => {
 link3.addEventListener('click', () => {
     scrollToTopic('.column');
 });
+
+const div = document.querySelector('.text');
+const div2 = document.querySelector('.text2');
+
+function typeWriter(element, text, speed = { type: 110, delete: 70, pause: 1000 }, i = 0, deleting = false) {
+    element.textContent = text.substring(0, i);
+
+    if (!deleting && i < text.length) {
+        setTimeout(() => typeWriter(element, text, speed, i + 1, false), speed.type);
+    } else if (!deleting && i === text.length) {
+        setTimeout(() => typeWriter(element, text, speed, i, true), speed.pause);
+    } else if (deleting && i > 0) {
+        setTimeout(() => typeWriter(element, text, speed, i - 1, true), speed.delete);
+    } else {
+        setTimeout(() => typeWriter(element, text, speed, 0, false), speed.pause);
+    }
+}
+
+typeWriter(div, "Hello World!", { type: 100, delete: 50, pause: 1000 });
